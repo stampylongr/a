@@ -1,0 +1,151 @@
+<!--
+
+  __        __   _       ____            _
+  \ \      / /__| |__   |  _ \  ___  ___(_) __ _ _ __
+   \ \ /\ / / _ \ '_ \  | | | |/ _ \/ __| |/ _` | '_ \
+    \ V  V /  __/ |_) | | |_| |  __/\__ \ | (_| | | | |
+     \_/\_/ \___|_.__/  |____/ \___||___/_|\__, |_| |_|
+                                           |___/
+
+  Copyright (c) 2023 Robert Wilcox <stampylongr7@gmail.com>
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as
+  published by the Free Software Foundation, either version 3 of the
+  License, or (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU Affero General Public License for more details.
+
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Contact Us &bull; The Whistle Stop</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/application.css">
+
+    <script type="module">
+      import 'https://cdn.skypack.dev/@hotwired/turbo'
+    </script>
+  </head>
+
+  <body>
+    <nav class="bg-gray-800" role="navigation">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <button class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" type="button" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+
+              <svg class="block h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex flex-shrink-0 items-center">
+              <img alt="The Whistle Stop" class="block h-8 w-auto" src="https://mononconnection.net/wp-content/uploads/cropped-Monon-Connection-Museum-Logo-Site-270x270.png">
+            </div>
+
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="/">Home</a>
+                <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="/about">About</a>
+                <a class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" href="/menu">Menu</a>
+                <a class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" href="/contact" aria-current="page">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        This mobile menu *would* be shown and hidden by clicking the button
+        near the beginning, but I don't want to hack together some
+        non-TypeScript React, so this will just... sorta be there if the screen
+        gets too small. Sorry.
+      -->
+      <div id="mobile-menu" class="sm:hidden">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium" href="/">Home</a>
+          <a class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium" href="/about">About</a>
+          <a class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium" href="/menu">Menu</a>
+          <a class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" href="/contact" aria-current="page">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="max-w-7xl mb-1 mx-auto px-2 py-4 lg:px-8 sm:px-6" role="main">
+      <h1 class="font-extrabold text-5xl">Contact us</h1>
+
+      <p class="mt-2">You can contact us via any of the listed methods.</p>
+
+      <div class="mt-2">
+        <h2 class="font-semibold inline-block">Email Address</h2>:
+        <a class="text-cyan-500 underline hover:no-underline" href="mailto:mamadren@tsc.k12.in.us">mamadren@tsc.k12.in.us</a>
+      </div>
+
+      <div class="mt-2">
+        <h2 class="font-semibold inline-block">Telephone Number</h2>:
+        <a class="text-cyan-500 underline hover:no-underline" href="tel:7657727683">(765) 772-7683</a>
+      </div>
+
+      <div class="mt-2">
+        <h2 class="font-semibold inline-block mb-1">Location</h2>:
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.0315112143435!2d-86.882861424202!3d40.89848222617872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8813b519c66c3879%3A0x5ed4bb66da79fd45!2sThe%20Whistle%20Stop%20%2F%20Monon%20Connection%20Museum!5e1!3m2!1sen!2sus!4v1684843171589!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="mt-2">
+        <h2 class="font-semibold inline-block mb-2">Hours</h2>:
+
+        <div class="border-collapse table table-auto text-sm">
+          <div class="table-header-group">
+            <div class="table-row">
+              <div class="table-cell border-b font-medium p-4 pl-8 pt-0 pb-3 text-slate-400 text-left">Monday</div>
+              <div class="table-cell border-b font-medium p-4 pt-0 pb-3 text-slate-400 text-left">Tuesday</div>
+              <div class="table-cell border-b font-medium p-4 pt-0 pb-3 text-slate-400 text-left">Wednesday</div>
+              <div class="table-cell border-b font-medium p-4 pt-0 pb-3 text-slate-400 text-left">Thursday</div>
+              <div class="table-cell border-b font-medium p-4 pt-0 pb-3 text-slate-400 text-left">Friday</div>
+              <div class="table-cell border-b font-medium p-4 pt-0 pb-3 text-slate-400 text-left">Saturday</div>
+              <div class="table-cell border-b font-medium p-4 pr-8 pt-0 pb-3 text-slate-400 text-left">Sunday</div>
+            </div>
+          </div>
+
+          <div class="table-row-group bg-white">
+            <div class="table-row">
+              <div class="table-cell border-b border-slate-200 p-4 pl-8 text-slate-500">Closed</div>
+              <div class="table-cell border-b border-slate-200 p-4 text-slate-500">11am-8pm</div>
+              <div class="table-cell border-b border-slate-200 p-4 text-slate-500">11am-8pm</div>
+              <div class="table-cell border-b border-slate-200 p-4 text-slate-500">11am-8pm</div>
+              <div class="table-cell border-b border-slate-200 p-4 text-slate-500">11am-9pm</div>
+              <div class="table-cell border-b border-slate-200 p-4 text-slate-500">11am-9pm</div>
+              <div class="table-cell border-b border-slate-200 p-4 pr-8 text-slate-500">11am-7pm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="border-t border-t-gray-300">
+      <div class="max-w-7xl mx-auto px-2 py-8 lg:px-8 sm:px-6">
+        <span class="text-gray-400">
+          &copy; 2023 Monon Connection Museum. Licensed under the
+          <a class="decoration-dashed underline hover:no-underline" target="_blank" href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL-3.0 license</a>.
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
